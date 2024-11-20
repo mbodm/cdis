@@ -1,0 +1,1 @@
+﻿ControlDisplayInputSourceCore.Main.Run(args);
