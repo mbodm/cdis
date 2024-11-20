@@ -19,7 +19,7 @@ A tiny Windows command line tool to change a display´s input source by using DD
 - It doesn't require any runtime-installation (since Windows 10/11 supports NET48 out of the box)
 - It has an executable size of ~12KB
 - It was the result of my early experiments in the [ControlDisplayInputSource](https://github.com/MBODM/ControlDisplayInputSource) repository
-- It is the direct successor of my later [cdis2410](https://github.com/MBODM/cdis2410) and [cdis2410-net48](https://github.com/MBODM/cdis2410-net48) tools
+- It's the direct successor of my later [cdis2410](https://github.com/MBODM/cdis2410) and [cdis2410-net48](https://github.com/MBODM/cdis2410-net48) tools
 - It's free to use and open source (under MIT license)
 
 ### Why it exists?
