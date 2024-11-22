@@ -1,13 +1,13 @@
 ﻿using System.Text;
 
-namespace ControlDisplayInputSource
+namespace ControlDisplayInputSourceDDC
 {
     // No interface, since there is no real benefit in "programming against abstractions" here.
     // Cause you can do all the Windows DDC stuff here more or less in just one specific way.
     // Making this implementation interchangeable is therefore just useless, in my opinion.
     // Test-wise there is not much to test here and "do you wanna mock the Windows API?".
 
-    internal sealed class DDCMonitorControl
+    public sealed class MonitorControl
     {
         private IntPtr hPhysicalMonitor = IntPtr.Zero;
         private string szPhysicalMonitorDescription = string.Empty;
@@ -18,10 +18,10 @@ namespace ControlDisplayInputSource
         {
             if (!IsInitialized)
             {
-                var hWindow = DDCWinApi.GetDesktopWindow();
-                var hMonitor = DDCWinApi.MonitorFromWindow(hWindow, DDCWinApi.MONITOR_DEFAULTTOPRIMARY);
+                var hWindow = WinApi.GetDesktopWindow();
+                var hMonitor = WinApi.MonitorFromWindow(hWindow, WinApi.MONITOR_DEFAULTTOPRIMARY);
 
-                if (!DDCWinApi.GetNumberOfPhysicalMonitorsFromHMONITOR(hMonitor, out uint numberOfPhysicalMonitors))
+                if (!WinApi.GetNumberOfPhysicalMonitorsFromHMONITOR(hMonitor, out uint numberOfPhysicalMonitors))
                 {
                     ThrowException("Could not determine number of physical monitors.", 50);
                 }
@@ -33,7 +33,7 @@ namespace ControlDisplayInputSource
 
                 var physicalMonitors = new PHYSICAL_MONITOR[numberOfPhysicalMonitors];
 
-                if (!DDCWinApi.GetPhysicalMonitorsFromHMONITOR(hMonitor, numberOfPhysicalMonitors, physicalMonitors))
+                if (!WinApi.GetPhysicalMonitorsFromHMONITOR(hMonitor, numberOfPhysicalMonitors, physicalMonitors))
                 {
                     ThrowException("Could not determine primary physical monitor.", 52);
                 }
@@ -56,7 +56,7 @@ namespace ControlDisplayInputSource
         {
             Init();
 
-            if (!DDCWinApi.GetVCPFeatureAndVCPFeatureReply(hPhysicalMonitor, 0x60, out _, out uint currentValue, out _))
+            if (!WinApi.GetVCPFeatureAndVCPFeatureReply(hPhysicalMonitor, 0x60, out _, out uint currentValue, out _))
             {
                 ThrowException("Could not get current VCP60 value.", 53);
             }
@@ -68,7 +68,7 @@ namespace ControlDisplayInputSource
         {
             Init();
 
-            if (!DDCWinApi.SetVCPFeature(hPhysicalMonitor, 0x60, value))
+            if (!WinApi.SetVCPFeature(hPhysicalMonitor, 0x60, value))
             {
                 ThrowException("Could not set VCP60 value.", 54);
             }
@@ -78,7 +78,7 @@ namespace ControlDisplayInputSource
         {
             Init();
 
-            var result = DDCWinApi.GetCapabilitiesStringLength(hPhysicalMonitor, out uint pdwCapabilitiesStringLengthInCharacters);
+            var result = WinApi.GetCapabilitiesStringLength(hPhysicalMonitor, out uint pdwCapabilitiesStringLengthInCharacters);
             if (!result || pdwCapabilitiesStringLengthInCharacters == 0)
             {
                 ThrowException("Could not determine length of DDC capabilities string.", 55);
@@ -86,7 +86,7 @@ namespace ControlDisplayInputSource
 
             var pszASCIICapabilitiesString = new StringBuilder((int)pdwCapabilitiesStringLengthInCharacters);
 
-            if (!DDCWinApi.CapabilitiesRequestAndCapabilitiesReply(hPhysicalMonitor, pszASCIICapabilitiesString, pdwCapabilitiesStringLengthInCharacters))
+            if (!WinApi.CapabilitiesRequestAndCapabilitiesReply(hPhysicalMonitor, pszASCIICapabilitiesString, pdwCapabilitiesStringLengthInCharacters))
             {
                 ThrowException("Could not determine DDC capabilities.", 56);
             }

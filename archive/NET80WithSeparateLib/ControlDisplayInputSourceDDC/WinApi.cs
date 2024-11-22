@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Text;
 
-namespace ControlDisplayInputSource
+namespace ControlDisplayInputSourceDDC
 {
     internal enum LPMC_VCP_CODE_TYPE
     {
@@ -17,7 +17,7 @@ namespace ControlDisplayInputSource
         public string szPhysicalMonitorDescription;
     }
 
-    internal class DDCWinApi
+    internal class WinApi
     {
         public const uint MONITOR_DEFAULTTOPRIMARY = 1;
 

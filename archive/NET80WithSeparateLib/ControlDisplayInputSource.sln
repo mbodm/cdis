@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDisplayInputSource", "ControlDisplayInputSource\ControlDisplayInputSource.csproj", "{2D7EEF53-BCAB-4DF2-BBDC-2398B130126E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlDisplayInputSource", "ControlDisplayInputSource\ControlDisplayInputSource.csproj", "{2D7EEF53-BCAB-4DF2-BBDC-2398B130126E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDisplayInputSourceDDC", "ControlDisplayInputSourceDDC\ControlDisplayInputSourceDDC.csproj", "{2C31572E-CDAD-4510-B2AD-FAE33C68CFB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2D7EEF53-BCAB-4DF2-BBDC-2398B130126E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D7EEF53-BCAB-4DF2-BBDC-2398B130126E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D7EEF53-BCAB-4DF2-BBDC-2398B130126E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C31572E-CDAD-4510-B2AD-FAE33C68CFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C31572E-CDAD-4510-B2AD-FAE33C68CFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C31572E-CDAD-4510-B2AD-FAE33C68CFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C31572E-CDAD-4510-B2AD-FAE33C68CFB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

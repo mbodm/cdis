@@ -1,4 +1,5 @@
 ﻿using ControlDisplayInputSource;
+using ControlDisplayInputSourceDDC;
 
 Console.WriteLine();
 Console.WriteLine(Helper.AppTitle);
@@ -19,7 +20,7 @@ if ((isGet && args.Length > 1) || (isSet && args.Length > 2) || (isCap && args.L
 
 try
 {
-    var mc = new DDCMonitorControl();
+    var mc = new MonitorControl();
 
     mc.Init();
 

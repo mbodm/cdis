@@ -26,9 +26,9 @@ namespace ControlDisplayInputSource
                 Console.WriteLine();
                 Console.WriteLine("Notes:");
                 Console.WriteLine();
-                Console.WriteLine("  - The DDC VCP60 value defines which display input source is active.");
                 Console.WriteLine("  - If your display does not support DDC/CI, this tool will not work.");
-                Console.WriteLine("  - If unsure, just check your display's user guide for more details.");
+                Console.WriteLine("  - If you are not sure, check the display's user guide, to find out.");
+                Console.WriteLine("  - The DDC VCP60 value defines which display input source is active.");
                 Console.WriteLine();
                 Console.WriteLine("Have a look at https://github.com/mbodm/cdis for more information");
             }

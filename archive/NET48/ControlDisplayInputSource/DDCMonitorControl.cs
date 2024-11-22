@@ -1,11 +1,10 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 namespace ControlDisplayInputSource
 {
-    // No interface, since there is no real benefit in "programming against abstractions" here.
-    // Cause you can do all the Windows DDC stuff here more or less in just one specific way.
-    // Making this implementation interchangeable is therefore just useless, in my opinion.
-    // Test-wise there is not much to test here and "do you wanna mock the Windows API?".
+    // Since you can do this Windows DDC stuff here more or less in just one specific way,
+    // there is no real benefit in "programming against an abstraction" (interface), etc.
 
     internal sealed class DDCMonitorControl
     {
