@@ -27,7 +27,7 @@ A tiny Windows command line tool to change a display's input source by using DDC
 
 ### Why it exists?
 
-It's possible to change the input source of a computer's display by software (in contrast to the hardware buttons of your display). Typically by using DDC/CI commands. The DDC VCP60 command is the key component here.
+It's possible to change the input source of a computer's display/monitor by software (in contrast to the hardware buttons of your display). Typically by using DDC/CI commands. The DDC VCP60 command is the key component here.
 
 I was just looking for a simple way to quickly switch my display's input source between 3 computers, with just one click. I found some tools out there (which all use DDC/CI too, of course). But i decided to build a simple and tiny tool by myself, which i can use in scripts or Windows Desktop shortcuts.
 
