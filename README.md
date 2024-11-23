@@ -91,7 +91,7 @@ That's why.
 
 ##### 2) _How to use "SDK-style project format" with a .NET 4.8 Framework project?_
 
-You need to do the following, to use the more modern "_SDK-sytle project format_" together with .NET 4.8 as framework:
+As a developer, you need to do the following, to use the more modern "_SDK-sytle project format_" together with .NET 4.8 as framework:
 - First create a .NET 8 console application
 - Change _Target Framework Moniker_ in project (".csproj" file) from `net8.0` to `net48`
 - Remove `<ImplicitUsings>enable</ImplicitUsings>` setting (since it's C# 7.3 now)
