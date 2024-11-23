@@ -76,8 +76,8 @@ That's why.
 The following was done, to use the more modern _SDK-sytle project format_, with .NET 4.8 as framework:
 - First created a .NET 8 console application
 - Changed _Target Framework Moniker_ in project (".csproj" file) to `net48` (instead of `net8.0`)
-- Removed `<ImplicitUsings>enable</ImplicitUsings>` setting there (since it's C# 7.3)
-- Removed `<Nullable>enable</Nullable>` setting there (since it's C# 7.3)
+- Removed `<ImplicitUsings>enable</ImplicitUsings>` setting there (since it's C# 7.3 now)
+- Removed `<Nullable>enable</Nullable>` setting there (since it's C# 7.3 now)
 - Added missing `using` statements in all source files (as result of above `<ImplicitUsings>` change)
 - Published with default setttings (in a `net48` project you can't change them)
 - Built on a Windows 10 machine
