@@ -59,7 +59,8 @@ Here are some key facts, you need to know first, to make the decision more easy 
 - An empty NET8 console application, published as _self-contained_ (with active _trim_ option) is ~11MB in size.
 - Same empty NET8 console application, with _AOT-complilation_ active, is ~1.3MB in size.
 - An empty NET48 console application is ~7KB in size (because NET48 is _framework-dependent_ in general).
-- Windows 11 (all versions) and Windows 10 ("May 2019 Update" or later) both include the NET48 runtime by default.
+- Windows 10 ("May 2019 Update" or later) includes the NET48 runtime by default.
+- Windows 11 (all versions) includes the NET48 runtime by default.
 - In 2017 .NET Core 2.0 introduced a new project format, called "SDK-style project format" (SSPF).
 - Most of the best features of modern NET8 platform, publish/deployment-wise, are a direct result of SSPF.
 - A NET48 project can also make use of the more modern SSPF (for "How?" see the section below).
