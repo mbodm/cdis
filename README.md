@@ -59,11 +59,11 @@ That said, this means if you want to make sure the compiled binary runs on all W
 As said above, the latter one runs on any Windows 10/11 machine out-of-the-box (even when _framework-dependent_ in general), because Windows 10 and Windows 11 have the .NET 4.8 Framework runtime installled by default. And even when the size difference is not that huge, i decided to stick with the NET48 route. And here is why:
 - My primary goal is: "_The published binary shall run out of the box, with no further requirements_"
 - I want to target solely Windows 10/11 machines (since not that many peoples use older versions)
-- Means: My primary goal is achieved by both above options (_self-contained_ NET8 or _framework_dependent_ NET48)
-- In source code i have no need for anything special (specific to NET8 or C# 12)
+- Means: My primary goal is achieved by both above options (_self-contained_ NET8, or _framework_dependent_ NET48)
+- In code there is also zero use of anything special (specific to NET8 or C# 12)
 - I still have the best publish/deployment features (since NET48 also can use SSPF)
 
-My result was: "_Hmm, when it doesn't matter anyway, why not just take the smaller binary size, when i have no other real benefit?_"
+My result was: "_Hmm, when it completely doesn't matter anyway, why not just stick with the smaller binary size, when i have no other real benefit at all?_"
 
 #### _How to use "SDK-style project format" for a .NET 4.8 Framework project?_
 
