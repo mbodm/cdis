@@ -44,7 +44,7 @@ Since `cdis.exe` is a CLI tool, you can use it in scripts or shortcuts. Personal
 
 The only downside of this "trick" is: Sometimes Windows adds a small delay (1-2 seconds), when using the keyboard hotkey. You can read this [superuser blogpost](https://superuser.com/questions/426947/slow-windows-desktop-keyboard-shortcuts) to see why and which solutions exist.
 
-### Super-technical section
+### Other nerd stuff?
 
 #### Why .NET Framework 4.8?
 
