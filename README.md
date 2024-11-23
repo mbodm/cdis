@@ -88,12 +88,12 @@ That's why.
 ##### 2) _How to use "SDK-style project format" for a .NET 4.8 Framework project?_
 
 You need to do the following, to use the more modern _SDK-sytle project format_ with .NET 4.8 as framework:
-- First created a .NET 8 console application
-- Changed _Target Framework Moniker_ in project (".csproj" file) to `net48` (instead of `net8.0`)
-- Removed `<ImplicitUsings>enable</ImplicitUsings>` setting there (since it's C# 7.3 now)
-- Removed `<Nullable>enable</Nullable>` setting there (since it's C# 7.3 now)
-- Added missing `using` statements in all source files (as result of above `<ImplicitUsings>` change)
-- Published with default setttings (in a `net48` project you can't change them)
+- First create a .NET 8 console application
+- Change _Target Framework Moniker_ in project (".csproj" file) to `net48` (instead of `net8.0`)
+- Remove `<ImplicitUsings>enable</ImplicitUsings>` setting there (since it's C# 7.3 now)
+- Remove `<Nullable>enable</Nullable>` setting there (since it's C# 7.3 now)
+- Add missing `using` statements in all source files (as result of above `<ImplicitUsings>` change)
+- Publish with default setttings (in a `net48` project you can't change them)
 
 #### Older Windows versions?
 
