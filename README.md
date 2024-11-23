@@ -40,7 +40,7 @@ The tool itself should be rather self-explanatory. Just use the `--cap` argument
 
 So, why i published that tool as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) AOT application? I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both.
 
-**Basics**
+##### Basics
 
 Here are some key facts, you need to know first, to make the decision more easy to explain from my side and more clear to understand on your side:
 - In .NET "_self-contained_" means "runs stand-alone" and "_framework-dependent_" means "needs a specific runtime".
