@@ -70,7 +70,7 @@ Here are some key facts, you need to know first, to make that decision more easy
 
 That said, this means you obviously have 2 options if you want to make sure the compiled binary runs on all Windows 10/11 machines out of the box (without any further pre-requirements):
 - Create a .NET 8 console application and publish it _self-contained_
-- Create a .NET Framework 4.8 console application (NET48 is _framework-dependent_ only)
+- Create a .NET Framework 4.8 console application (_framework-dependent_-only)
 
 As said above, the latter one runs on any Windows 10/11 machine out of the box, even when _framework-dependent_ in general, cause Windows 10/11 has the .NET 4.8 Framework runtime installled by default. And even when the size difference is not that huge, i decided to stick with the NET48 route. And here is why:
 - My primary goal is: "_The published binary shall run out of the box, with no further requirements_"
