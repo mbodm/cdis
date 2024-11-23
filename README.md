@@ -81,7 +81,7 @@ Even when the size difference is not that huge, i decided to stick with the NET4
 - In code there is also zero use of anything special (specific to NET8 or C#12)
 - I still have the best publish/deployment features (since NET48 also can use SSPF)
 
-The binary size battle is, of course, easy to win for NET48, since it's _framework_dependent_ in general. Which means all the used .NET functionalities (libraries) will exist outside of the binary, in the separate installed runtime. Whereas for _self-contained_ all the used functionalities are compiled into the binary itself. Which results, of course, in a bigger binary.
+The binary size battle is, of course, easy to win for NET48, since it's _framework_dependent_ in general. Which means all the used .NET functionalities (libraries) will exist outside of the binary, in the separate installed runtime. Whereas for a _self-contained_ .NET app all the used functionalities are compiled into the binary itself. Which results, of course, in a bigger binary.
 
 But i just thought:
 
