@@ -63,7 +63,7 @@ Here are some key facts, you need to know first, to make the decision more easy 
 - Windows 10 ("May 2019 Update" or later) includes the NET48 runtime by default.
 - Windows 11 (all versions) includes the NET48 runtime by default.
 - In 2017 .NET Core 2.0 introduced a new project format, called "SDK-style project format" (SSPF).
-- Most of the best features of modern NET8 platform, publish/deployment-wise, are a direct result of SSPF.
+- Most of the best features of modern .NET platform, publish/deployment-wise, are a direct result of SSPF.
 - A NET48 project can also make use of the more modern SSPF (for "How?" see the section below).
 
 That said, this means if you want to make sure the compiled binary runs on all Windows 10/11 machines out of the box (without any further pre-requirements) you obviously have 2 options:
