@@ -38,7 +38,7 @@ The tool itself should be rather self-explanatory. Just use the `--cap` argument
 
 ### Nice, anything else?
 
-"_How to switch the input source by using the keyboard?_"
+"_How to switch the display input source by using the keyboard?_"
 
 A quick personal suggestion (this is how i use the tool):
 
