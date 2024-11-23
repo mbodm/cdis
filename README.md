@@ -87,7 +87,7 @@ So, what about running `cdis.exe` on older Windows versions, before Windows10/11
 
 ##### Windows 7/8
 
-In general, this tool runs on Windows 7 and Windows 8.1 as well. You just need to separately install the .NET Framework 4.8 runtime on those Windows versions. That's all.
+In general, this tool runs on Windows 7 and Windows 8.1 as well. You just need to separately install the .NET Framework 4.8 runtime on those Windows versions (you can download the runtime from the Microsoft). That's all.
 
 ##### Windows Vista and older
 
