@@ -65,7 +65,7 @@ As said above, the latter one runs on any Windows 10/11 machine out-of-the-box (
 
 My result was: "_Hmm, when it doesn't matter anyway, why not just take the smaller binary size, when i have no other real benefit?_"
 
-#### _How to use SSPF for a .NET 4.8 Framework project?_
+#### _How to use "SDK-style project format" for a .NET 4.8 Framework project?_
 
 The following was done, to use the more modern _SDK-sytle project format_, with .NET 4.8 as framework:
 - First created a .NET 8 console application
