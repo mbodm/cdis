@@ -68,7 +68,7 @@ Here are some key facts, you need to know first, to make that decision more easy
 - Most of the best features of modern .NET, publish/deployment-wise, base on SSPF.
 - A NET48 project can also make use of modern SSPF (for "_How?_" see [section](#2-how-to-use-sdk-style-project-format-for-a-net-48-framework-project) below).
 
-That said, this means, if you want to make sure the compiled binary runs on all Windows 10/11 machines out of the box (without any further pre-requirements), you obviously have 2 options:
+That said, this means you obviously have 2 options if you want to make sure the compiled binary runs on all Windows 10/11 machines out of the box (without any further pre-requirements):
 - Create a .NET 8 console application and publish it _self-contained_
 - Create a .NET Framework 4.8 console application (which is by default _framework-dependent_)
 
