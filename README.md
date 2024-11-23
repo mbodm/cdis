@@ -6,22 +6,20 @@ A tiny Windows command line tool to change a display's input source by using DDC
 
 ### What is it?
 
-- It's a tiny command line tool for Windows (64-bit)
-<!-- It's a tiny command line tool for Windows 10/11 -->
+- It's a tiny command line tool for Windows 10/11
 - It's named `cdis.exe` where "cdis" stands for "**C**ontrol**D**isplay**I**nput**S**ource"
 - It uses DDC/CI to control the input source of a DDC-capable display/monitor
 - It does this by using the Windows API
-- It runs on any 64-bit Windows 10/11 machine
-- Its release binary/executable has a size of ~2MB
-- It's a .NET 8 console application and it's written in C#
+- It runs on any Windows 10/11 64-bit machine
+- Its release binary/executable has a size of ~12KB
+- It's a .NET Framework 4.8 console application and it's written in C#
+- It's developed by using the more modern SDK-style project format in ".csproj" file
 - It's developed with Visual Studio 2022 17.12.1 (Community Edition)
 - It has no dependencies to anything (no 3rd party library, etc.)
 - It's built by using the global `dotnet` tools on the command line
 - It's built on a Windows 11 machine (Windows 11 version 23H2 build 22631.4460)
-- It's built and published as a _self-contained_ .NET 8 assembly/executable
-- It's built and published using _win64_ as target platform
-- It's built and published AOT-compiled to shrink executable size to 2MB (from 13MB)
-- It doesn't require any runtime-installation (since _self-contained_ apps run stand-alone)
+- It's built and published as a .NET Framework 4.8 assembly/executable
+- It doesn't require any runtime-installation (Windows 10/11 has the runtime by default)
 - It's the result of my early [ControlDisplayInputSource](https://github.com/MBODM/ControlDisplayInputSource) experiments
 - It's the direct successor of my later [cdis2410](https://github.com/MBODM/cdis2410) and [cdis2410-net48](https://github.com/MBODM/cdis2410-net48) tools
 - It's free to use and open source (under MIT license)
