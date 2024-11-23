@@ -75,7 +75,7 @@ That said, this means you obviously have 2 options if you want to make sure the 
 As said above, the latter one runs on any Windows 10/11 machine out of the box, even when _framework-dependent_ in general, cause Windows 10/11 includes the .NET 4.8 Framework runtime and therefore has it installled by default.
 
 Even when the size difference is not that huge, i decided to stick with the NET48 route. And here is why:
-- My top goal: "_Published binary shall run out of the box, with no further requirements_"
+- My prio#1: "_Published binary shall run out of the box, with no further requirements_"
 - I solely target Windows 10/11 machines (since not that many peoples use older versions)
 - Means: I achieve my primary goal by both above options (_self-contained_ NET8, or _framework_dependent_ NET48)
 - In code there is also zero use of anything special (specific to NET8 or C#12)
