@@ -60,7 +60,7 @@ As said above, the latter one runs on any Windows 10/11 machine out-of-the-box (
 - My primary goal is: "_The published binary shall run out of the box, with no further requirements_"
 - I want to target solely Windows 10/11 machines (since not that many peoples use older versions)
 - Means: I achieve my primary goal by both above options (_self-contained_ NET8, or _framework_dependent_ NET48)
-- In code there is also zero use of anything special (specific to NET8 or C# 12)
+- In code there is also zero use of anything special (specific to NET8 or C#12)
 - I still have the best publish/deployment features (since NET48 also can use SSPF)
 
 My result was: "_Hmm, when it completely doesn't matter anyway, why not just stick with the smaller binary size, when i have no other real benefit at all?_"
