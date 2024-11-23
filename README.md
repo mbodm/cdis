@@ -85,7 +85,7 @@ The binary size battle is, of course, easy to win for NET48, since it's _framewo
 
 But i just thought:
 
-"_Hmm, when it completely doesn't matter anyway, why not just stick with the smaller binary size, when i have no other real benefit at all?_"
+"_Hmm, when it completely doesn't matter anyway, why not just stick with the smaller binary size, when i obviously have no other real benefit at all?_"
 
 That's why.
 
