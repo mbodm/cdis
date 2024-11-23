@@ -38,7 +38,7 @@ The tool itself should be rather self-explanatory. Just use the `--cap` argument
 
 ### Any additional suggestions?
 
-A small suggestion or "_How to switch the input source, by using the keyboard?_" (this is how i personally use the tool):
+A small suggestion or "_How to switch the input source by using the keyboard?_" (this is how i personally use the tool):
 
 Since `cdis.exe` is a CLI tool, you can use it in scripts or shortcuts. Personally, i created 2 different `cdis.exe --set [NUMBER]` Windows Desktop shortcuts (".lnk" files). One for each of my other 2 computers. For each Windows Desktop shortcut i defined a keyboard hotkey (right-click and select "Properties"). In example something like "SHIFT+ALT+RIGHTARROW". This way you just need to press those keys on your keyboard, to quickly switch to another computer. Hint: You can also pin Windows Desktop shortcuts to "Start" or the Windows TaskBar.
 
