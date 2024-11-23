@@ -36,7 +36,7 @@ As a result, this tool was born.
 
 The tool itself should be rather self-explanatory. Just use the `--cap` argument to see which VCP60 values your display supports. Each VCP60 value represents one physical input source of your display. Either you just test each VCP60 value (by using the `--set` argument), or you take a look into your display's user manual, to find out which VCP60 value corresponds to which physical input source. By using the `--get` argument you can see which VCP60 value (and therefore the corresponding input source) is currently active.
 
-### Fine, anything else?
+### Cool, anything else?
 
 A suggestion or "_How to switch the input source, by using the keyboard?_" (this is how i personally use the tool):
 
