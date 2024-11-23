@@ -19,7 +19,7 @@ A tiny Windows command line tool to change a display's input source by using DDC
 - It's built by using the global `dotnet` tools on the command line
 - It's built on a Windows 11 machine (Windows 11 version 23H2 build 22631.4460)
 - It's built and published as a .NET Framework 4.8 assembly/executable
-- It doesn't require any runtime-installation (Windows 10/11 has the runtime by default)
+- It doesn't require any runtime-installation (Windows 10/11 includes the runtime by default)
 - It's the result of my early [ControlDisplayInputSource](https://github.com/MBODM/ControlDisplayInputSource) experiments
 - It's the direct successor of my later [cdis2410](https://github.com/MBODM/cdis2410) and [cdis2410-net48](https://github.com/MBODM/cdis2410-net48) tools
 - It's free to use and open source (under MIT license)
