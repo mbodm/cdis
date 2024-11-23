@@ -97,6 +97,7 @@ As a developer, you need to do the following, to use the more modern "_SDK-sytle
 - Remove `<ImplicitUsings>enable</ImplicitUsings>` setting (since it's C# 7.3 now)
 - Remove `<Nullable>enable</Nullable>` setting (since it's C# 7.3 now)
 - Add missing `using` statements in source files (result of `<ImplicitUsings>` change)
+- Convert `Main()` to old style (IntelliSense has a QuickTip for this and can do it for you)
 - Publish with default setttings (in a `net48` project you can't change them)
 
 #### Earlier Windows versions?
