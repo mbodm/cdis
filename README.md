@@ -65,7 +65,7 @@ As said above, the latter one runs on any Windows 10/11 machine out-of-the-box (
 
 My result was: "_Hmm, when it completely doesn't matter anyway, why not just stick with the smaller binary size, when i have no other real benefit at all?_"
 
-That's why. 😄
+That's why.
 
 #### _How to use "SDK-style project format" for a .NET 4.8 Framework project?_
 
