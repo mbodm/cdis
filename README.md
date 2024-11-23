@@ -99,7 +99,7 @@ You need to do the following, to use the more modern "_SDK-sytle project format_
 - Add missing `using` statements in source files (result of `<ImplicitUsings>` change)
 - Publish with default setttings (in a `net48` project you can't change them)
 
-#### Older Windows versions?
+#### Earlier Windows versions?
 
 So, what about running `cdis.exe` on older Windows versions, before Windows 10/11?
 
