@@ -40,7 +40,7 @@ The tool itself should be rather self-explanatory. Just use the `--cap` argument
 
 So, why i published that tool as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) AOT application? I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both.
 
-#### Basics
+##### Basics
 
 Here are some key facts, you need to know first, to make the decision more easy to explain from my side and more clear to understand on your side:
 - In .NET "_self-contained_" means "runs stand-alone" and "_framework-dependent_" means "needs a specific runtime".
@@ -71,7 +71,7 @@ But i just thought:
 
 That's why.
 
-**_How to use "SDK-style project format" for a .NET 4.8 Framework project?_**
+##### _How to use "SDK-style project format" for a .NET 4.8 Framework project?_
 
 The following was done, to use the more modern _SDK-sytle project format_, with .NET 4.8 as framework:
 - First created a .NET 8 console application
@@ -85,15 +85,15 @@ The following was done, to use the more modern _SDK-sytle project format_, with 
 
 So, what about running `cdis.exe` on older Windows versions, before Windows10/11?
 
-**Windows 7/8**
+##### Windows 7/8
 
 In general, this tool runs on Windows 7 and Windows 8.1 as well. You just need to separately install the .NET Framework 4.8 runtime on those Windows versions. That's all.
 
-**Windows Vista and older**
+##### Windows Vista and older
 
 To make it run on even older Windows versions, you just need to download the source, set an older target framework (like in example .NET Framework 4.6) and re-compile it. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies).
 
-**Fictional NET8 handling**
+##### Fictional NET8 handling
 
 That said, even when i would stick to the NET8 route (see section above), it would be also very simple, to make `cdis.exe` running on older Windows versions. I assume (knowing myself), i would just not publish the binary for that Windows versions, ready-to-download, on the [Releases](https://github.com/mbodm/cdis/releases) page. I would be just too lazy, to do this by myself, for sure. 😄 Cause the target audience is just not that huge, in my opinion. But it would be also rather easy to do this, on your own: You would just need to download the source and compile it as _framework-dependent_, instead of _self-contained_. Then you could install the separate .NET 8.0 or .NET 6.0 runtime on Windows 7, or Windows 8.1 and the `cdis.exe` runs like a charm. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/core/install/windows#supported-versions).
 
