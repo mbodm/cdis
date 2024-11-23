@@ -44,7 +44,9 @@ Since `cdis.exe` is a CLI tool, you can use it in scripts or shortcuts. Personal
 
 The only downside of this "trick" is: Sometimes Windows adds a small delay (1-2 seconds), when using the keyboard hotkey. You can read this [superuser blogpost](https://superuser.com/questions/426947/slow-windows-desktop-keyboard-shortcuts) to see why and which solutions exist.
 
-### Why .NET Framework 4.8?
+### Super-technical section
+
+#### Why .NET Framework 4.8?
 
 So, why i published that tool as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) AOT application? I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both.
 
@@ -89,7 +91,7 @@ The following was done, to use the more modern _SDK-sytle project format_, with 
 - Added missing `using` statements in all source files (as result of above `<ImplicitUsings>` change)
 - Published with default setttings (in a `net48` project you can't change them)
 
-### Older Windows versions?
+#### Older Windows versions?
 
 So, what about running `cdis.exe` on older Windows versions, before Windows10/11?
 
@@ -107,4 +109,4 @@ That said, even when i (fictionally) would stick to the NET8 route (see [section
 
 In short: Regardless what, it's super easy to make `cdis.exe` running on many older Windows platforms.
 
-#### Have fun.
+**Have fun.**
