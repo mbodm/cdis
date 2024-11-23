@@ -65,7 +65,7 @@ As said above, the latter one runs on any Windows 10/11 machine out of the box (
 
 The binary size battle is, of course, easy to win for NET48, since it's _framework_dependent_ in general. Which means all the used .NET functionalities (libraries) will exist outside of the binary, in the separate installed runtime. Whereas for _self-contained_ all the used functionalities are compiled into the binary itself. Which results, of course, in a bigger binary.
 
-But my thought was just this: "_Hmm, when it completely doesn't matter anyway, why not just stick with the smaller binary size, when i have no other real benefit at all?_"
+But i just thought: "_Hmm, when it completely doesn't matter anyway, why not just stick with the smaller binary size, when i have no other real benefit at all?_"
 
 That's why.
 
