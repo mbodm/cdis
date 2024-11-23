@@ -38,6 +38,8 @@ The tool itself should be rather self-explanatory. Just use the `--cap` argument
 
 ### Why .NET Framework 4.8?
 
+##### Explanation
+
 So, why i published that tool as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8 (NET8) AOT application? I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both.
 
 Here are some key facts, you need to know first, to make the decision more clear/easy to explain from my side and to understand on your side:
@@ -47,25 +49,23 @@ Here are some key facts, you need to know first, to make the decision more clear
 - Where _self-contained_ means "runs stand-alone" and _framework-dependent_ means "needs a specific runtime".
 - Windows 11 (all versions) or Windows 10 ("May 2019 Update" or later) includes the NET48 runtime by default.
 - In 2017 .NET Core 2.0 introduced a new project format, called "SDK-style project format" (SSPF).
-- Most of the best features, of modern NET8 platform, publishing/deployment-wise, are the result of SSPF.
+- Most of the best features of modern NET8 platform, publishing/deployment-wise, are the result of SSPF.
 - A NET48 project can also make use of the more modern SSPF (for "how?" see the section below).
 
 That said, this means if you want to make sure the compiled binary runs on all Windows 10/11 machines out-of-the-box (without any further pre-requirements) you obviously have 2 options:
 - Create a .NET 8 console application and publish it _self-contained_
 - Create a .NET Framework 4.8 console application (which is by default _framework-dependent_)
 
-As said above, the latter one runs on any Windows 10/11 machine out-of-the-box (even when _framework-dependent_ in general), because Windows 10 and Windows 11 have the .NET 4.8 Framework runtime installled by default.
+As said above, the latter one runs on any Windows 10/11 machine out-of-the-box (even when _framework-dependent_ in general), because Windows 10 and Windows 11 have the .NET 4.8 Framework runtime installled by default. And even when the size difference is not that huge, i decided to stick with the NET48 route. And here is why:
+- My primary goal is: "_The published binary shall run out of the box, with no further requirements_"
+- I want to target solely Windows 10/11 machines (since not that many peoples use older versions)
+- Means: My primary goal is achieved by both above options (_self-contained_ NET8 or _framework_dependent_ NET48)
+- In source code i have no need for anything special (specific to NET8 or C# 12)
+- I still have the best publish/deployment features (since NET48 also can use SSPF)
 
-Even when the size difference is not that huge, i decided to stick with the NET48 route. And here is why:
+My result was: "_Hmm, when it doesn't matter anyway, why not just take the smaller binary size, when i have no other real benefit?_"
 
-Just deploy the binary itself and it should run out of the box, with no further requirements. This goal is achieved by all options. Therefore i thought "why deploy bigger binaries than needed?"
-- My primary goal is: "_The published binary shall run out of the box, with no further requirements_".
-- I solely target Windows 10/11 machines (which has the .NET 4.8 framework installed out of the box).
-- In code i have no need for anything special (specific to NET8 or C# 12)
-- Therefore i have no real benefit of the more modern NET8/C#12 approach
-
-My result was: "_Hmm, when it doesn't matter anyway, why not just take the smaller binary size?_"
-
+##### How to use SSPF for a .NET 4.8 Framework project?
 
 The following was done, to use the more modern _SDK-sytle project format_, with .NET 4.8 as framework:
 - First created a .NET 8 console application
