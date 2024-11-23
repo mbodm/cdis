@@ -101,7 +101,7 @@ You need to do the following, to use the more modern "_SDK-sytle project format_
 
 #### Older Windows versions?
 
-So, what about running `cdis.exe` on older Windows versions, before Windows10/11?
+So, what about running `cdis.exe` on older Windows versions, before Windows 10/11?
 
 ##### 1) Windows 7/8
 
