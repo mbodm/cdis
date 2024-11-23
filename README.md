@@ -36,6 +36,14 @@ As a result, this tool was born.
 
 The tool itself should be rather self-explanatory. Just use the `--cap` argument to see which VCP60 values your display supports. Each VCP60 value represents one physical input source of your display. Either you just test each VCP60 value (by using the `--set` argument), or you take a look into your display's user manual, to find out which VCP60 value corresponds to which physical input source. By using the `--get` argument you can see which VCP60 value (and therefore the corresponding input source) is currently active.
 
+### Fine, anything else?
+
+A suggestion or "_How to switch the input source, by using the keyboard?_" (this is how i personally use the tool):
+
+Since `cdis.exe` is a CLI tool, you can use it in scripts or shortcuts. Personally, i created 2 different `cdis.exe --set [NUMBER]` Windows Desktop shortcuts (".lnk" files). One for each of my other 2 computers. For each Windows Desktop shortcut i defined a keyboard hotkey (right-click and select "Properties"). In example something like "SHIFT+ALT+RIGHTARROW". This way you just need to press those keys on your keyboard, to quickly switch to another computer. Hint: You can also pin Windows Desktop shortcuts to "Start" or the Windows TaskBar.
+
+The only downside of this "trick" is: Sometimes Windows adds a small delay (1-2 seconds), when using the keyboard hotkey. You can read this [superuser blogpost](https://superuser.com/questions/426947/slow-windows-desktop-keyboard-shortcuts) to see why and which solutions exist.
+
 ### Why .NET Framework 4.8?
 
 So, why i published that tool as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) AOT application? I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both.
@@ -98,13 +106,5 @@ To make it run on even older Windows versions, you just need to download the sou
 That said, even when i (fictionally) would stick to the NET8 route (see [section](#why-net-framework-48) above), it would be also very simple, to make `cdis.exe` running on older Windows versions. Knowing myself, i would not offer published binaries for that Windows versions, ready-to-download, on the [Releases](https://github.com/mbodm/cdis/releases) page, out of the box. I would be just too lazy to do this by myself, for sure. 😄 Cause the target audience is just not that huge, in my opinion. But nonetheless, it would be also rather easy to do this on your own: You would just need to download the source and compile it as _framework-dependent_, instead of _self-contained_. Then you could install the separate .NET 8.0 or .NET 6.0 runtime on Windows 7/8 and `cdis.exe` runs like a charm. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/core/install/windows#windows-7--81--server-2012).
 
 In short: Regardless what, it's super easy to make `cdis.exe` running on many older Windows platforms.
-
-### Fine, anything else?
-
-A suggestion or "_How to switch the input source, by using the keyboard?_" (this is how i personally use the tool):
-
-Since `cdis.exe` is a CLI tool, you can use it in scripts or shortcuts. Personally, i created 2 different `cdis.exe --set [NUMBER]` Windows Desktop shortcuts (".lnk" files). One for each of my other 2 computers. For each Windows Desktop shortcut i defined a keyboard hotkey (right-click and select "Properties"). In example something like "SHIFT+ALT+RIGHTARROW". This way you just need to press those keys on your keyboard, to quickly switch to another computer. Hint: You can also pin Windows Desktop shortcuts to "Start" or the Windows TaskBar.
-
-The only downside of this "trick" is: Sometimes Windows adds a small delay (1-2 seconds), when using the keyboard hotkey. You can read this [superuser blogpost](https://superuser.com/questions/426947/slow-windows-desktop-keyboard-shortcuts) to see why and which solutions exist.
 
 #### Have fun.
