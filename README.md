@@ -46,6 +46,8 @@ The only downside of this "trick" is: Sometimes Windows adds a small delay (1-2 
 
 ### Other nerd shit?
 
+This is the "technical details" section, for the more nerdy folks (like developers, IT-people, and so on).
+
 #### Why .NET Framework 4.8?
 
 So, why i published that tool as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) AOT application? I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both.
