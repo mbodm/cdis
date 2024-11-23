@@ -36,18 +36,19 @@ As a result, this tool was born.
 
 The tool itself should be rather self-explanatory. Just use the `--cap` argument to see which VCP60 values your display supports. Each VCP60 value represents one physical input source of your display. Either you just test each VCP60 value (by using the `--set` argument), or you take a look into your display's user manual, to find out which VCP60 value corresponds to which physical input source. By using the `--get` argument you can see which VCP60 value (and therefore the corresponding input source) is currently active.
 
+### Why .NET Framework 4.8?
+
+So, why i published that tool as .NET Framework 4.8 console application, instead of a more modern .NET 8 AOT application? I specifically said "published" instead of "developed", since the source code is 99% the same, for both.
+
+Here are some key facts, you need to know, to make the decision more clear/easy to explain from my side and to understand on your side:
+- 
+
 ### Fine, anything else?
 
-##### 1)
 A suggestion or "_How to switch the input source, by using the keyboard?_" (this is how i personally use the tool):
 
 Since `cdis.exe` is a CLI tool, you can use it in scripts or shortcuts. Personally, i created 2 different `cdis.exe --set [NUMBER]` Windows Desktop shortcuts (".lnk" files). One for each of my other 2 computers. For each Windows Desktop shortcut i defined a keyboard hotkey (right-click and select "Properties"). In example something like "SHIFT+ALT+RIGHTARROW". This way you just need to press those keys on your keyboard, to quickly switch to another computer. Hint: You can also pin Windows Desktop shortcuts to "Start" or the Windows TaskBar.
 
 The only downside of this "trick" is: Sometimes Windows adds a small delay (1-2 seconds), when using the keyboard hotkey. You can read this [superuser blogpost](https://superuser.com/questions/426947/slow-windows-desktop-keyboard-shortcuts) to see why and which solutions exist.
-
-##### 2)
-The tool also runs on any other (older) Windows platform (like Windows 7 or Windows 8). You just need to install a .NET 8 runtime on those platforms. Then download the above source and publish it as _framework-dependent_. I just don't provide this out of the box, as binary in the [Releases](https://github.com/mbodm/cdis/releases) section, since there are not that many people out there, using such old Windows versions.
-
-If in doubt, just use your GoogleFu when it comes down to "_the modern .NET platform_", "_self-contained & framework-dependent_", `dotnet build` and such things. It's really simple.
 
 #### Have fun.
