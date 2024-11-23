@@ -50,10 +50,10 @@ Here are some key facts, you need to know first, to make the decision more clear
 - Most of the best features, of modern NET8 platform, publishing/deployment-wise, are the result of SSPF.
 - A NET48 project can also make use of the more modern SSPF (for "how?" see the section below).
 
-That said, this means if you want to make sure the compiled binary runs on all Windows 10/11 machines out-of-the-box (without any further pre-requirements) you typically have 2 options:
+That said, this means if you want to make sure the compiled binary runs on all Windows 10/11 machines out-of-the-box (without any further pre-requirements) you obviously have 2 options:
 - Create a .NET 8 console application and publish it _self-contained_
 - Create a .NET Framework 4.8 console application (which is by default _framework-dependent_)
-As said above, the latter one runs on any Windows 10/11 machine out-of-th- box, even when _framework-dependent_ in general (which means it needs an installed runtime), because Windows 10 and Windows 11 have the .NET 4.8 Framework runtime installled by default.
+As said above, the latter one runs on any Windows 10/11 machine out-of-the-box (even when _framework-dependent_ in general), because Windows 10 and Windows 11 have the .NET 4.8 Framework runtime installled by default.
 
 Even when the size difference is not that huge, i decided to stick with the NET48 route. And here is why:
 
