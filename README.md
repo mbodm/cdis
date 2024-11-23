@@ -43,10 +43,10 @@ So, why i published that tool as a .NET Framework 4.8 (NET48) application, inste
 #### Basics
 
 Here are some key facts, you need to know first, to make the decision more easy to explain from my side and more clear to understand on your side:
+- In .NET speech _self-contained_ means "runs stand-alone" and _framework-dependent_ means "needs a specific runtime".
 - An empty NET8 console application, published as _self-contained_ (with active _trim_ option) is ~11MB in size.
 - Same empty NET8 console application, with AOT-complilation active, is ~1.3MB in size.
 - An empty NET48 console application is ~7KB in size (because NET48 is _framework-dependent_ in general).
-- Where _self-contained_ means "runs stand-alone" and _framework-dependent_ means "needs a specific runtime".
 - Windows 11 (all versions) or Windows 10 ("May 2019 Update" or later) includes the NET48 runtime by default.
 - In 2017 .NET Core 2.0 introduced a new project format, called "SDK-style project format" (SSPF).
 - Most of the best features of modern NET8 platform, publishing/deployment-wise, are the result of SSPF.
