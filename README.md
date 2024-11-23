@@ -8,7 +8,7 @@ A tiny Windows command line tool to change a display's input source by using DDC
 
 - It's a tiny command line tool for Windows (64-bit)
 - It's named `cdis.exe` where "cdis" stands for "**C**ontrol**D**isplay**I**nput**S**ource"
-- It uses the DDC/CI standard to control the input source of a DDC-capable display/monitor
+- It uses DDC/CI to control the input source of a DDC-capable display/monitor
 - It does this by using the Windows API
 - It runs on any 64-bit Windows 10/11 machine
 - Its release binary/executable has a size of ~2MB
