@@ -48,33 +48,12 @@ Here are some key facts, you need to know first, to make the decision more clear
 - Windows 11 (all versions) or Windows 10 ("May 2019 Update" or later) includes the NET48 runtime by default.
 - In 2017 .NET Core 2.0 introduced a new project format, called "SDK-style project format" (SSPF).
 - Most of the best features, of modern NET8 platform, publishing/deployment-wise, are the result of SSPF.
-- A NET48 project can also make use of the more modern SSPF (for "how?" see section below).
-- 
-- 
+- A NET48 project can also make use of the more modern SSPF (for "how?" see the section below).
 
-
-
-
-
-
-
-
-
-
-
-
-### Why .NET 4.8 and not .NET 8.0?
-
-To make sure the compiled binary runs on all Windows 10/11 machines (without any further pre-requirements) you normally have 2 options:
-- Create a .NET 8.0 console application and publish it _self-contained_
-- Create a .NET 4.8 console application and publish it _framework-dependent_
-
-The latter one runs on any Windows 10/11 machine out of the box, even when _framework-dependent_ (which means it needs an installed runtime), because Windows 10 and Windows 11 have the .NET 4.8 runtime installled by default.
-
-The resulting binary (".exe" file) sizes are:
-- An empty NET8 console application, published as _self-contained_ (with active _trim_ option) is ~11MB in size.
-- An empty NET8 AOT console application is ~1.3MB in size.
-- An empty NET48 console application, published as _framework_dependent_, is ~7KB in size.
+That said, this means if you want to make sure the compiled binary runs on all Windows 10/11 machines out-of-the-box (without any further pre-requirements) you typically have 2 options:
+- Create a .NET 8 console application and publish it _self-contained_
+- Create a .NET Framework 4.8 console application (which is by default _framework-dependent_)
+As said above, the latter one runs on any Windows 10/11 machine out-of-th- box, even when _framework-dependent_ in general (which means it needs an installed runtime), because Windows 10 and Windows 11 have the .NET 4.8 Framework runtime installled by default.
 
 Even when the size difference is not that huge, i decided to stick with the NET48 route. And here is why:
 
