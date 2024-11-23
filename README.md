@@ -47,7 +47,7 @@ Here are some key facts, you need to know first, to make the decision more clear
 - Where _self-contained_ means "runs stand-alone" and _framework-dependent_ means "needs a specific runtime".
 - Windows 11 (all versions) or Windows 10 ("May 2019 Update" or later) includes the NET48 runtime by default.
 - In 2017 .NET Core 2.0 introduced a new project format, called "SDK-style project format" (SSPF).
-- Most of the best features, of modern NET8 platform, publishing/deployment-wise, are a result of SSPF.
+- Most of the best features, of modern NET8 platform, publishing/deployment-wise, are the result of SSPF.
 - A NET48 project can also make use of the more modern SSPF (for "how?" see section below).
 - 
 - 
