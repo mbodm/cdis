@@ -40,7 +40,9 @@ The tool itself should be rather self-explanatory. Just use the `--cap` argument
 
 So, why i published that tool as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) AOT application? I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both.
 
-##### 1) Basics
+#### 1)
+
+Basics:
 
 Here are some key facts, you need to know first, to make the decision more easy to explain from my side and more clear to understand on your side:
 - In .NET "_self-contained_" means "runs stand-alone" and "_framework-dependent_" means "needs a specific runtime".
@@ -71,7 +73,9 @@ But i just thought:
 
 That's why.
 
-##### 2) _How to use "SDK-style project format" for a .NET 4.8 Framework project?_
+#### 2)
+
+_How to use "SDK-style project format" for a .NET 4.8 Framework project?_
 
 The following was done, to use the more modern _SDK-sytle project format_, with .NET 4.8 as framework:
 - First created a .NET 8 console application
