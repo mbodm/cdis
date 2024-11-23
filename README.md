@@ -81,7 +81,9 @@ The following was done, to use the more modern _SDK-sytle project format_, with 
 - Added missing `using` statements in all source files (as result of above `<ImplicitUsings>` change)
 - Published with default setttings (in a `net48` project you can't change them)
 
-### What about older Windows versions?
+### Old Windows versions?
+
+So, what about running `cdis.exe` on older Windows versions, before Windows10/11?
 
 In general, this tool runs on Windows 7 and Windows 8.1 as well. You just need to separately install the .NET Framework 4.8 runtime on those Windows versions.
 
