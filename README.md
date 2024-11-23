@@ -13,9 +13,9 @@ A tiny Windows command line tool to change a display's input source by using DDC
 - It runs on any Windows 10/11 machine
 - Its release binary (executable) has a size of ~12KB
 - It's a .NET Framework 4.8 console application and it's written in C#
+- It has no dependencies to anything (no 3rd party library, etc.)
 - It's developed by using the more modern SDK-style project format in ".csproj" file
 - It's developed with Visual Studio 2022 17.12.1 (Community Edition)
-- It has no dependencies to anything (no 3rd party library, etc.)
 - It's built by using the global `dotnet` tools on the command line
 - It's built on a Windows 11 machine (Version 23H2)
 - It's built and published as a .NET Framework 4.8 assembly/executable (_framework-dependent_)
