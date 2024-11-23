@@ -93,9 +93,9 @@ That's why.
 
 You need to do the following, to use the more modern "_SDK-sytle project format_" together with .NET 4.8 as framework:
 - First create a .NET 8 console application
-- Change _Target Framework Moniker_ in project (".csproj" file) to `net48` (instead of `net8.0`)
-- Remove `<ImplicitUsings>enable</ImplicitUsings>` setting there (since it's C# 7.3 now)
-- Remove `<Nullable>enable</Nullable>` setting there (since it's C# 7.3 now)
+- Change _Target Framework Moniker_ in project (".csproj" file) from `net8.0` to `net48`
+- Remove `<ImplicitUsings>enable</ImplicitUsings>` setting (since it's C# 7.3 now)
+- Remove `<Nullable>enable</Nullable>` setting (since it's C# 7.3 now)
 - Add missing `using` statements in all source files (as result of above `<ImplicitUsings>` change)
 - Publish with default setttings (in a `net48` project you can't change them)
 
