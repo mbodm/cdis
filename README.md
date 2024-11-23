@@ -91,7 +91,7 @@ In general, this tool runs on Windows 7 and Windows 8.1 as well. You just need t
 
 #### Windows Vista and older
 
-And to make it run on even older Windows versions, you just need to download the source, set an older target framework (like in example .NET Framework 4.6) and re-compile it. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies).
+To make it run on even older Windows versions, you just need to download the source, set an older target framework (like in example .NET Framework 4.6) and re-compile it. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies).
 
 #### Fictional NET8 handling
 
