@@ -72,7 +72,7 @@ That said, this means you obviously have 2 options if you want to make sure the 
 - Create a .NET 8 console application and publish it _self-contained_
 - Create a .NET Framework 4.8 console application (always _framework-dependent_)
 
-As said above, the latter one runs on any Windows 10/11 machine out of the box, even when _framework-dependent_ in general, cause Windows 10/11 has the .NET 4.8 Framework runtime installled by default.
+As said above, the latter one runs on any Windows 10/11 machine out of the box, even when _framework-dependent_ in general, cause Windows 10/11 includes the .NET 4.8 Framework runtime and therefore has it installled by default.
 
 Even when the size difference is not that huge, i decided to stick with the NET48 route. And here is why:
 - My primary goal is: "_The published binary shall run out of the box, with no further requirements_"
