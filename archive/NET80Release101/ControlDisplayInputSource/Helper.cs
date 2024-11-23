@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
+﻿using System.Globalization;
 using System.Reflection;
 
 namespace ControlDisplayInputSource
@@ -69,27 +66,27 @@ namespace ControlDisplayInputSource
                 return string.Empty;
             }
 
-            var hexValuesString = capabilitiesString.
-                Split(new string[] { "60(" }, StringSplitOptions.RemoveEmptyEntries).Last().Trim().
-                Split(new char[] { ')' }, StringSplitOptions.RemoveEmptyEntries).First().Trim();
-            if (string.IsNullOrEmpty(hexValuesString))
+            var vcp60HexValuesString = capabilitiesString.
+                Split("60(", StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).Last().
+                Split(')', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).First();
+            if (string.IsNullOrEmpty(vcp60HexValuesString))
             {
                 return string.Empty;
             }
 
-            var hexValues = hexValuesString.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            var hexValues = vcp60HexValuesString.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
             var decValues = new List<uint>();
-            foreach (var hexValue in hexValues)
+            foreach (var hex in hexValues)
             {
-                if (uint.TryParse(hexValue.Trim(), NumberStyles.HexNumber, null, out uint decValue))
+                if (uint.TryParse(hex, NumberStyles.HexNumber, null, out uint decValue))
                 {
                     decValues.Add(decValue);
                 }
             }
 
-            var decValuesString = string.Join(" ", decValues).TrimEnd();
+            var decString = string.Join(" ", decValues).TrimEnd();
 
-            return decValuesString;
+            return decString;
         }
 
         private static string GetVersionFromProject()
