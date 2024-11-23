@@ -96,7 +96,7 @@ You need to do the following, to use the more modern "_SDK-sytle project format_
 - Change _Target Framework Moniker_ in project (".csproj" file) from `net8.0` to `net48`
 - Remove `<ImplicitUsings>enable</ImplicitUsings>` setting (since it's C# 7.3 now)
 - Remove `<Nullable>enable</Nullable>` setting (since it's C# 7.3 now)
-- Add missing `using` statements in all source files (result of `<ImplicitUsings>` change)
+- Add missing `using` statements in source files (result of `<ImplicitUsings>` change)
 - Publish with default setttings (in a `net48` project you can't change them)
 
 #### Older Windows versions?
