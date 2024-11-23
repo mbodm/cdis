@@ -119,6 +119,6 @@ Knowing myself, i would not offer published binaries for that Windows versions, 
 
 But nonetheless, it would be also rather easy to do this on your own: You would just need to download the source and compile it as _framework-dependent_, instead of _self-contained_. Then you could install the separate .NET 8.0 or .NET 6.0 runtime on Windows 7/8 and `cdis.exe` runs like a charm. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/core/install/windows#windows-7--81--server-2012).
 
-In short: Regardless what, it's super easy to make `cdis.exe` running on many older Windows platforms.
+In short: Regardless what, it will always be super easy to make `cdis.exe` running on older Windows platforms.
 
 **Have fun.**
