@@ -10,7 +10,7 @@ A tiny Windows command line tool to change a display's input source by using DDC
 - It's named `cdis.exe` where "cdis" stands for "**C**ontrol**D**isplay**I**nput**S**ource"
 - It uses DDC/CI to control the input source of a DDC-capable display/monitor
 - It does this by using the Windows API
-- It runs on nearly any Windows 10/11 machine (see [here](https://github.com/mbodm/cdis/blob/main/NET48.md))
+- It runs on any Windows 10/11 machine
 - Its release binary (executable) has a size of ~12KB
 - It's a .NET Framework 4.8 console application and it's written in C#
 - It has no dependencies to anything (no 3rd party library, etc.)
