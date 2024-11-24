@@ -26,7 +26,7 @@ As said above, the latter one runs on any Windows 10/11 machine out of the box, 
 
 Even when the size difference is not that huge, i often decide to stick with the NET48 route. And here is why:
 - My prio#1: "_A published binary shall run out of the box, with no further requirements_"
-- I solely target Windows 10/11 machines (since not that many people use older versions)
+- I solely target Windows 10/11 machines (not that many people use older versions)
 - Means: I achieve my prio#1 with both above options (_self-contained_ NET8 or NET48)
 - In code there is also zero use of anything special (specific to NET8 or C#12)
 - I still have the best publish/deployment features (since NET48 also can use SSPF)
