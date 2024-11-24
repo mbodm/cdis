@@ -2,12 +2,12 @@
 
 set CURRENT_FOLDER=%cd%
 set PROJECT_FOLDER=%CURRENT_FOLDER%\src\ControlDisplayInputSource\ControlDisplayInputSource
-set PUBLISH_FOLDER=%PROJECT_FOLDER%\bin\Release\net8.0\win-x64\publish
+set PUBLISH_FOLDER=%PROJECT_FOLDER%\bin\Release\net48\publish
 set RELEASE_FOLDER=%CURRENT_FOLDER%\release
 
 cls
 echo.
-echo cdis.exe release script 1.0.0 (by MBODM 11/2024)
+echo cdis.exe release script 1.0.1 (by MBODM 11/2024)
 echo.
 
 cd %PROJECT_FOLDER%
