@@ -28,7 +28,7 @@ Even when the size difference is not that huge, i often decide to stick with the
 - My prio#1: "_A published binary shall run out of the box, with no further requirements_"
 - I solely target Windows 10/11 machines (not that many people use older versions)
 - Means: I achieve my prio#1 with both above options (_self-contained_ NET8 or NET48)
-- In code there is also zero use of anything special (specific to NET8 or C#12)
+- In code there is also nearly zero use of anything special (specific to NET8 or C#12)
 - I still have the best publish/deployment features (since NET48 also can use SSPF)
 
 The binary size battle is, of course, easy to win for NET48, since it's _framework_dependent_ in general. Which means all the used .NET functionalities (libraries) will exist outside of the binary, in the separate installed runtime. Whereas for a _self-contained_ .NET app the used functionalities are all compiled into the binary itself. Which results, of course, in a bigger binary.
