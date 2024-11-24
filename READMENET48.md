@@ -1,8 +1,10 @@
+### Why .NET Framework 4.8?
+
 Why i publish a tool, in 2024 or later, as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) AOT application?
 
-I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both. Otherwise the following thoughts would not come into my mind and would not stand up to below argument.
+I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both. Otherwise the following thoughts would not come into my mind and would not stand up to below argumentation.
 
-### Basics
+#### Basics
 
 Here are some key facts, you need to know first, to make the decision more easy to explain from my side and more clear to understand on your side:
 - In the modern .NET platform "_self-contained_" means "app runs stand-alone".
@@ -37,7 +39,7 @@ But i just thought:
 
 That's the sole reason, why.
 
-### _How to use "SDK-style project format" with a .NET 4.8 Framework project?_
+#### _How to use "SDK-style project format" with a .NET 4.8 Framework project?_
 
 As a developer, you need to do the following, to use the more modern "_SDK-sytle project format_" together with .NET 4.8 as framework:
 - First create a .NET 8 console application
