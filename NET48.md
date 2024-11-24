@@ -39,7 +39,7 @@ But i just thought:
 
 That's why i often end up using NET48+SSPF, in projects i can not make good use of modern C# features.
 
-#### _How to use "SDK-style project format" with a .NET 4.8 Framework project?_
+#### How to use "SDK-style project format" with a .NET 4.8 Framework project?
 
 As a developer, you need to do the following, to use the more modern "_SDK-sytle project format_" together with .NET 4.8 as framework:
 - First create a .NET 8 console application
@@ -49,3 +49,15 @@ As a developer, you need to do the following, to use the more modern "_SDK-sytle
 - Add missing `using` statements in source files (result of `<ImplicitUsings>` change)
 - Convert `Main()` to old style (IntelliSense has a Quick Action to do this for you)
 - Publish with default setttings (in a `net48` project you can't change them)
+
+#### Earlier Windows versions
+
+.NET Framework (4.8, 4.6, and so on) supports earlier Windows versions anyway. You just need to install the .NET Framework runtime on that Windows machine. In the worst case you need to download the source, change the target framework (in example from .NET Framework 4.8 to .NET Framework 4.6) and re-compile it.
+
+Fictional: But even when i would stick to the NET8 route, it would be also very simple, to make a console application running on older Windows versions.
+
+Knowing myself, i assume i would not offer published binaries for that Windows versions, out of the box and ready to download, on the "Releases" page. I would be just too lazy to do this by myself, for sure. 😄 Cause the target audience is just not that huge, in my opinion.
+
+But nonetheless, it would be also rather easy to do this on your own: You would just need to download the source and compile it as _framework-dependent_, instead of _self-contained_. Then you could install the separate .NET 8.0 or .NET 6.0 runtime on Windows 7/8 and the CLI tool would run like a charm. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/core/install/windows#windows-7--81--server-2012).
+
+So, there is always good support for earlier Windows versions, regardless what.
