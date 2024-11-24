@@ -60,4 +60,4 @@ Knowing myself, i assume i would not offer published binaries for that Windows v
 
 But nonetheless, it would be also rather easy to do this on your own: You would just need to download the source and compile it as _framework-dependent_, instead of _self-contained_. Then you could install the separate .NET 8.0 or .NET 6.0 runtime on Windows 7/8 and the CLI tool would run like a charm. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/core/install/windows#windows-7--81--server-2012).
 
-So, there is always good support for earlier Windows versions, regardless what.
+So, there is always great support for earlier Windows versions, regardless what.
