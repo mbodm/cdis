@@ -37,7 +37,7 @@ But i just thought:
 
 "_Hmm, when it completely doesn't matter anyway, why not just stick with the smaller binary size, when i obviously have no other real benefit at all?_"
 
-That's the sole reason, why.
+That's why i often end up using NET48+SSPF, in projects i can not make good use of modern C# features.
 
 #### _How to use "SDK-style project format" with a .NET 4.8 Framework project?_
 
