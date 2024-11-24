@@ -54,22 +54,12 @@ You will find a detailed answer to that question [here](https://github.com/mbodm
 
 So, what about running `cdis.exe` on Windows versions, older than Windows 10/11?
 
-##### 1) Windows 7/8
+**Windows 7/8:**:
 
 In general, this tool runs on Windows 7/8 as well, by default. You just need to separately install the .NET Framework 4.8 runtime on those Windows versions (you can download the runtime from Microsoft). That's all.
 
-##### 2) Windows Vista and earlier
+**Windows Vista and earlier**:
 
 To make it run on even older Windows versions, you just need to download the source, set an older target framework (in example .NET Framework 4.6) and re-compile it. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies).
-
-##### 3) Fictional NET8 handling
-
-That said, even when i (fictionally) would stick to the NET8 route (see ["Why .NET Framework 4.8?](https://github.com/mbodm/cdis/NET48.md)"), it would be also very simple, to make `cdis.exe` running on older Windows versions.
-
-Knowing myself, i would not offer published binaries for that Windows versions, out of the box and ready-to-download, on the [Releases](https://github.com/mbodm/cdis/releases) page. I would be just too lazy to do this by myself, for sure. 😄 Cause the target audience is just not that huge, in my opinion.
-
-But nonetheless, it would be also rather easy to do this on your own: You would just need to download the source and compile it as _framework-dependent_, instead of _self-contained_. Then you could install the separate .NET 8.0 or .NET 6.0 runtime on Windows 7/8 and `cdis.exe` would run like a charm. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/core/install/windows#windows-7--81--server-2012).
-
-In short: Regardless what, it will always be super easy to make `cdis.exe` running on older Windows platforms.
 
 **Have fun.**
