@@ -1,6 +1,6 @@
 ### Why .NET Framework 4.8?
 
-Why i publish a tool, in 2024 or later, as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) application (which may even use AOT compilation)?
+Why i publish a tool, in 2024 or later, as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8.0 (NET8) application (which may even make use of AOT compilation)?
 
 I specifically said "published" here, instead of "developed", since the source code is 99% the same, for both. Otherwise the following thoughts would not come into my mind and would not stand up to below argumentation.
 
