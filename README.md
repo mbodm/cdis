@@ -54,11 +54,11 @@ You will find a detailed answer to that question [here](https://github.com/mbodm
 
 So, what about running `cdis.exe` on Windows versions, older than Windows 10/11?
 
-**Windows 7/8:**:
+##### Windows 7/8
 
 In general, this tool runs on Windows 7/8 as well, by default. You just need to separately install the .NET Framework 4.8 runtime on those Windows versions (you can download the runtime from Microsoft). That's all.
 
-**Windows Vista and earlier**:
+##### Windows Vista and earlier
 
 To make it run on even older Windows versions, you just need to download the source, set an older target framework (in example .NET Framework 4.6) and re-compile it. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies).
 
