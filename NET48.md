@@ -2,7 +2,7 @@
 
 Why i publish a tool, in 2024 or later, as a .NET Framework 4.8 (NET48) application, instead of a more modern .NET 8 (NET8) application (which may even make use of AOT compilation)?
 
-I specifically said "publish" here, instead of "develop", since the source code is 99% the same, for both. This is often the case, for rather simple CLI tools, which not make much use of modern C# features (which normally offer great QoL improvements). Otherwise the following thoughts would not come into my mind and would not stand up to below argumentation.
+I specifically said "publish" here, instead of "develop", since the source code is 99% the same, for both. This is often the case, for rather simple CLI tools, which not make much use of modern C# features (which otherwise offer great QoL improvements). Otherwise the following thoughts would not come into my mind and would not stand up to below argumentation.
 
 #### Basics
 
