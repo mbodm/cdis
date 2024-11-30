@@ -8,12 +8,12 @@ But if you don't care about the Windows 1-2 seconds delay, it's totally fine to 
 
 This is, how i solved it:
 - I use AutoHotkey for this
-- Download the pure "AutoHotkey64.exe" file (portable version) into some folder
-- Create a text file named "Keyboard.ahk" in that folder (file name doesn't matter)
+- Download the pure `AutoHotkey64.exe` file (portable version) into some folder
+- Create a text file named `Keyboard.ahk` in that folder (file name doesn't matter)
 - We edit and fill this text file later
-- Create a Windows Desktop Shortcut (".lnk" file) for the "AutoHotkey64.exe"
+- Create a Windows Desktop Shortcut (".lnk" file) for the `AutoHotkey64.exe`
 - Right-click the Windows Desktop Shortcut and select "Properties"
-- Add the text file name ("Keyboard.ahk" in this case) as parameter to the "AutoHotkey64.exe" call
+- Add the text file name (`Keyboard.ahk` in this case) as parameter to the `AutoHotkey64.exe` call
 - This tells AutoHotkey -> "_When you start, read all the commands from Keyboard.ahk file!_"
 - Now move the Windows Desktop Shortcut into the startup folder
   - Just press "WIN+R" and type in "shell:startup" and press "ENTER"
