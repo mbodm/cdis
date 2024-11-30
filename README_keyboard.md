@@ -30,7 +30,7 @@ This way you start AutoHotkey automatically, when you login with your user. Auto
 ```
 
 All 3 commands here do something rather simple:
-- Register a keyboard hotkey (see AutoHotkey docs for more information)
+- Register a keyboard hotkey (see AutoHotkey [docs](https://www.autohotkey.com/docs/v2) for more information)
 - In example "^!Right" means "CTRL+ALT+RIGHTARROW"
 - Register a "Run" command for each keyboard hotkey
 - The Run command here says "_Start `cdis.exe` with appropriate input source VCP60 value_"
