@@ -61,7 +61,7 @@ This is, how i solved it:
   - Hint -> Startup folder is user-related
   - Therefore make sure you are currently logged in as the specific user you want to add this for
 
-This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "Keyboard.ahk"). Now let's add some AutoHotkey commands to the text file:
+We are nearly done. This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "Keyboard.ahk"). Now let's add some AutoHotkey commands to the text file:
 
 ```
 ^!Right::Run "C:\Tools\cdis.exe --set 3"
