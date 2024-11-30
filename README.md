@@ -40,7 +40,7 @@ The tool itself should be rather self-explanatory. Just use the `--cap` argument
 
 "_How to switch the display input source by using the keyboard?_"
 
-A quick personal suggestion (this is how i use the tool):
+A quick personal suggestion (this is how i use the tool) and the answer to above question you will find [here](https://github.com/mbodm/cdis/blob/main/README_keyboard.md).
 
 Since `cdis.exe` is a CLI tool, you can use it in scripts and shortcuts. Personally, i created myself 2 different `cdis.exe --set [NUMBER]` Windows Desktop shortcuts (".lnk" files). One for each of my 2 other computers. For each Windows Desktop shortcut i defined a keyboard hotkey (right-click and select "Properties"). In example, something like "SHIFT+ALT+LEFTARROW". This way i just need to press those keys on the keyboard to quickly switch to another computer. Hint: You can also pin Windows Desktop shortcuts to "Start" or to the Windows TaskBar.
 
@@ -86,7 +86,7 @@ And that's it. Now you can press your choosed keys on your keyboard and your cho
 
 ### Why .NET Framework 4.8?
 
-You will find a detailed answer to that question [here](https://github.com/mbodm/cdis/blob/main/NET48.md).
+You will find a detailed answer to that question [here](https://github.com/mbodm/cdis/blob/main/README_net48.md).
 
 ### Earlier Windows versions?
 
