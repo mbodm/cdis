@@ -7,7 +7,7 @@ The only downside of this "trick": Sometimes Windows adds a small delay (1-2 sec
 But if you don't care about the Windows 1-2 seconds delay, it's totally fine to stick with the simple solution above. Otherwise you may be interessted in the following solution. If so, keep on reading.
 
 This is, how i solved it:
-- I use AutoHotkey for this
+- I use [AutoHotkey](https://www.autohotkey.com) for this
 - Download the pure `AutoHotkey64.exe` file (portable version) into some folder
 - Create a text file named `Keyboard.ahk` in that folder (file name doesn't matter)
 - We edit and fill this text file later
