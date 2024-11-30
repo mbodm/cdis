@@ -49,18 +49,18 @@ The only downside of this "trick": Sometimes Windows adds a small delay (1-2 sec
 This is, how i solved it:
 - I use AutoHotkey for this
 - Download the pure "AutoHotkey64.exe" file (portable version) into some folder
-- Create a text file named "cdis.ahk" in that folder (file name doesn't matter)
+- Create a text file named "Keyboard.ahk" in that folder (file name doesn't matter)
 - We edit and fill this text file later
 - Create a Windows Desktop Shortcut (".lnk" file) for the "AutoHotkey64.exe"
 - Right-click the Windows Desktop Shortcut and select "Properties"
-- Add the text file name ("cdis.ahk" in this case) as parameter to the "AutoHotkey64.exe" call
+- Add the text file name ("Keyboard.ahk" in this case) as parameter to the "AutoHotkey64.exe" call
 - Now move the Windows Desktop Shortcut into the startup folder
   - Just press "WIN+R" and type in "shell:startup"
   - This opens the startup folder
   - Hint -> Startup folder is user-related
   - Therefore make sure you are currently logged in as the specific user you want to add this for
 
-This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "cdis.ahk"). Now let's add some AutoHotkey commands to the text file:
+This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "Keyboard.ahk"). Now let's add some AutoHotkey commands to the text file:
 
 ```
 ^!Right::Run "C:\Tools\cdis.exe --set 3"
