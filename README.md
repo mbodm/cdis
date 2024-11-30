@@ -44,7 +44,7 @@ The tool itself should be rather self-explanatory.
 
 "_How to switch the display input source by using the keyboard?_"
 
-A quick personal suggestion (this is how i use the tool), and the answer to above question, you will find [here](https://github.com/mbodm/cdis/blob/main/README_keyboard.md).
+A quick personal suggestion (this is how i use the tool), and the answer to above question, you can find [here](https://github.com/mbodm/cdis/blob/main/README_keyboard.md).
 
 ### Why .NET Framework 4.8?
 
