@@ -48,10 +48,10 @@ The only downside of this "trick": Sometimes Windows adds a small delay (1-2 sec
 
 This is, how i solved it:
 - I use AutoHotkey for this
-- Download the pure "AutoHotkey64.exe" file (portable version) and copy it to some folder
-- Create a Windows Desktop Shortcut (".lnk" file) for that "AutoHotkey64.exe" file in that folder
+- Download the pure "AutoHotkey64.exe" file (portable version) into some folder
 - Create a text file named "cdis.ahk" in that folder (file name doesn't matter)
 - We edit and fill this text file later
+- Create a Windows Desktop Shortcut (".lnk" file) for the "AutoHotkey64.exe"
 - Right-click the Windows Desktop Shortcut and select properties
 - Add the text file name ("cdis.ahk" in this case) as parameter to the "AutoHotkey64.exe" call
 - Now move the Windows Desktop Shortcut into the startup folder
@@ -61,11 +61,11 @@ This is, how i solved it:
   - Therefore make sure you are currently logged in as the specific user you want to add this for
 
 This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "cdis.ahk"). Now let's add the AutoHotkey commands to the text file:
-
+```
 ^!Right::Run "C:\Tools\cdis.exe --set 3"
 ^!Left::Run "C:\Tools\cdis.exe --set 17"
 ^!Up::Run "C:\Tools\cdis.exe --set 15"
-
+```
 
 
 ### Why .NET Framework 4.8?
