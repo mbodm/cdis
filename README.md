@@ -60,7 +60,7 @@ To make it run on even older Windows versions, you just need to download the sou
 
 ### Support for multiple displays?
 
-Sorry, full multi-monitor support is somewhat "spicy". To do it the right way (correctly determine all monitors of all desktops and name/control them all correctly) ends up rather complex on the Windows platorm.
+Sorry, full multi-monitor support is somewhat "spicy". To do it the right way (correctly determine all monitors of all Desktops and name/control them all correctly) ends up rather complex on the Windows platorm.
 
 Therefore:
 - `cdis.exe` doesn't offer multi-monitor control
