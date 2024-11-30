@@ -60,13 +60,21 @@ This is, how i solved it:
   - Hint -> Startup folder is user-related
   - Therefore make sure you are currently logged in as the specific user you want to add this for
 
-This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "cdis.ahk"). Now let's add the AutoHotkey commands to the text file:
+This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "cdis.ahk"). Now let's add some AutoHotkey commands to the text file:
+
 ```
 ^!Right::Run "C:\Tools\cdis.exe --set 3"
 ^!Left::Run "C:\Tools\cdis.exe --set 17"
 ^!Up::Run "C:\Tools\cdis.exe --set 15"
 ```
 
+All 3 commands here do something rather simple:
+- Register a keyboard hotkey (see AutoHotkey docs for more information)
+- In example "^!Right" means "CTRL+ALT+RIGHTARROW"
+- Register a "Run" command for each keyboard hotkey
+- The Run command here says "_Start cdis.exe with appropriate input source VCP60 value_"
+
+That's it. This way you register 3 keyboard hotkeys when you login. And whenever you press that keyboard hotkey cdis starts and activate the appropriate input source of your display.
 
 ### Why .NET Framework 4.8?
 
