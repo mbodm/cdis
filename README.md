@@ -46,6 +46,28 @@ Since `cdis.exe` is a CLI tool, you can use it in scripts and shortcuts. Persona
 
 The only downside of this "trick": Sometimes Windows adds a small delay (1-2 seconds), when using the keyboard hotkey shortcut. You can read more about it in this [superuser blogpost](https://superuser.com/questions/426947/slow-windows-desktop-keyboard-shortcuts) to see "_why?_" and which solutions exist.
 
+This is, how i solved it:
+- I use AutoHotkey for this
+- Download the pure "AutoHotkey64.exe" file (portable version) and copy it to some folder
+- Create a Windows Desktop Shortcut (".lnk" file) for that "AutoHotkey64.exe" file in that folder
+- Create a text file named "cdis.ahk" in that folder (file name doesn't matter)
+- We edit and fill this text file later
+- Right-click the Windows Desktop Shortcut and select properties
+- Add the text file name ("cdis.ahk" in this case) as parameter to the "AutoHotkey64.exe" call
+- Now move the Windows Desktop Shortcut into the startup folder
+  - Just press "WIN+R" and type in "shell:startup"
+  - This opens the startup folder
+  - Hint -> Startup folder is user-related
+  - Therefore make sure you are currently logged in as the specific user you want to add this for
+
+This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "cdis.ahk"). Now let's add the AutoHotkey commands to the text file:
+
+^!Right::Run "C:\Tools\cdis.exe --set 3"
+^!Left::Run "C:\Tools\cdis.exe --set 17"
+^!Up::Run "C:\Tools\cdis.exe --set 15"
+
+
+
 ### Why .NET Framework 4.8?
 
 You will find a detailed answer to that question [here](https://github.com/mbodm/cdis/blob/main/NET48.md).
