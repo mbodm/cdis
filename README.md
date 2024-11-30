@@ -82,6 +82,6 @@ This is nothing special to `cdis.exe` and it's always happening in Windows, for 
 
 ### Build the source?
 
-If you wanna build the app on your own, just download the source and execute the `build.bat` script. Feel free to enhance the source, adapt it into your own projects, or whatever. It's under MIT license. So you can do with it, whatever you want. 😜
+If you wanna build the app on your own, just download the source and execute the `build.bat` script. Feel free to enhance the source, adapt it into your own projects, or whatever. It's under MIT license. You can do with it, whatever you want. 😜
 
 **Have fun.**
