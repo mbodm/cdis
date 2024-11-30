@@ -80,7 +80,7 @@ To do this, just right-click the ".exe" file in Explorer, select "Properties", c
 
 This is nothing special to `cdis.exe` and it's always happening in Windows, for any ".exe" not having a certificate (many don't have one). I just thought, it`s worth to mention this here, for the less experienced IT-peoples. You can read about it [here](https://www.windowscentral.com/how-fix-app-has-been-blocked-your-protection-windows-10), or you can watch the first part of [this](https://www.youtube.com/watch?v=0YYWaQSbiVA) video.
 
-### Build the source?
+### Build from source?
 
 If you wanna build the app on your own, just download the source, download & install the latest .NET SDK from Microsoft, and execute the `build.bat` script.
 
