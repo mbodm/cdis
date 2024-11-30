@@ -4,7 +4,7 @@ Since `cdis.exe` is a CLI tool, you can use it in scripts and shortcuts. Persona
 
 The only downside of this "trick": Sometimes Windows adds a small delay (1-2 seconds), when using the keyboard hotkey shortcut. You can read more about it in this [superuser blogpost](https://superuser.com/questions/426947/slow-windows-desktop-keyboard-shortcuts) to see "_why?_" and which solutions exist.
 
-But if you don't care about the Windows 1-2 seconds delay, it's totally fine to stick with the simple solution above. Otherwise you may be interessted in the following solution.
+But if you don't care about the Windows 1-2 seconds delay, it's totally fine to stick with the simple solution above. Otherwise you may be interessted in the following solution, so keep on reading.
 
 This is, how i solved it:
 - I use AutoHotkey for this
