@@ -52,7 +52,7 @@ This is, how i solved it:
 - Create a text file named "cdis.ahk" in that folder (file name doesn't matter)
 - We edit and fill this text file later
 - Create a Windows Desktop Shortcut (".lnk" file) for the "AutoHotkey64.exe"
-- Right-click the Windows Desktop Shortcut and select properties
+- Right-click the Windows Desktop Shortcut and select "Properties"
 - Add the text file name ("cdis.ahk" in this case) as parameter to the "AutoHotkey64.exe" call
 - Now move the Windows Desktop Shortcut into the startup folder
   - Just press "WIN+R" and type in "shell:startup"
