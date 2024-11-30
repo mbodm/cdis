@@ -36,10 +36,6 @@ As a result, this tool was born.
 
 The tool itself should be rather self-explanatory. Just use the `--cap` argument to see which VCP60 values your display supports. Each VCP60 value represents one physical input source of your display. Either you just test each VCP60 value (by using the `--set` argument), or you take a look into your display's user manual, to find out which VCP60 value corresponds to which physical input source. By using the `--get` argument you can see which VCP60 value (and therefore the corresponding input source) is currently active.
 
-Note:
-- The tool doesn't offer multi-monitor control
-- The tool will always use the primary monitor
-
 ### Nice, anything else?
 
 "_How to switch the display input source by using the keyboard?_"
@@ -61,5 +57,13 @@ In general, this tool runs on Windows 7/8 as well, by default. You just need to 
 ##### Windows Vista and earlier
 
 To make it run on even older Windows versions, you just need to download the source, set an older target framework (in example .NET Framework 4.6) and re-compile it. You can find more information [here](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies).
+
+### Support for multiple displays?
+
+Sorry, full multi-monitor support is somewhat "spicy". To do it the right way (correctly determine all monitors of all desktops and name/control them all correctly) ends up rather complex on the Windows platorm.
+
+Therefore:
+- `cdis.exe` doesn't offer multi-monitor control
+- `cdis.exe` will always use the primary monitor
 
 **Have fun.**
