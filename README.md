@@ -72,7 +72,7 @@ Therefore:
 
 Check out the other DDC/CI tools out there, like in example NirSoft's fantastic  [ControlMyMonitor](https://www.nirsoft.net/utils/control_my_monitor.html), if you are looking for multi-monitor support. Also [ddcutil](https://www.ddcutil.com/windows_programs/) has a nice list. Sorry `cdis.exe` can't help you here.
 
-### Windows blocks access?
+### Windows shows blue popup?
 
 Typically, when you just start some ".exe" file, which has no certificate and is downloaded from somewhere (like in example from GitHub, in a ".zip" file 😄), Windows will block the access (by showing the blue SmartScreen popup), until you allow the ".exe" (telling Windows "_it's ok_").
 
