@@ -61,7 +61,7 @@ This is, how i solved it:
   - Hint -> Startup folder is user-related
   - Therefore make sure you are currently logged in as the specific user you want to add this for
 
-We are nearly done. This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "Keyboard.ahk"). Now let's add some AutoHotkey commands to the text file:
+This way you start AutoHotkey automatically, when you login with your user. AutoHotkey then reads all commands from a text file (in this case "Keyboard.ahk"). Now let's add some AutoHotkey commands to the text file:
 
 ```
 ^!Right::Run "C:\Tools\cdis.exe --set 3"
@@ -75,7 +75,14 @@ All 3 commands here do something rather simple:
 - Register a "Run" command for each keyboard hotkey
 - The Run command here says "_Start cdis.exe with appropriate input source VCP60 value_"
 
-That's it. This way you register 3 keyboard hotkeys when you login. And whenever you press that keyboard hotkey cdis starts and activate the appropriate input source of your display.
+This way you register 3 keyboard hotkeys when you login. And whenever you press that keyboard hotkey cdis starts and activate the appropriate input source of your display.
+
+You can edit the text file and adjust it accordingly, to
+- set the correct path where your "cdis.exe" is located
+- set the correct VCP60 values for your display
+- set the keyboard keys you wish to use
+
+And that's it. Now you can press your choosed keys on your keyboard and your choosed corresponding input source of your display will be activated. Without any delay. For me, it works like a charm. Thanks to AutoHotkey. And if you need more information about AutoHotkey itself, or the used commands, or what you can do else with AutoHotkey (spoiler: A LOT!), just visit the [AutoHotkey](https://www.autohotkey.com) page.
 
 ### Why .NET Framework 4.8?
 
