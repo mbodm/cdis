@@ -21,19 +21,7 @@ namespace ControlDisplayInputSource
                 Console.WriteLine();
                 Console.WriteLine(ExeDescription);
                 Console.WriteLine();
-                Console.WriteLine("Usage:");
-                Console.WriteLine();
-                Console.WriteLine($"  {ExeName} --get        Get the display's acutal DDC VCP60 value (as a number between 1 and 65535)");
-                Console.WriteLine($"  {ExeName} --set X      Set the display's acutal DDC VCP60 value (X: a number between 1 and 65535)");
-                Console.WriteLine($"  {ExeName} --cap        Get the display's supported VCP60 values (via the DDC capabilities string)");
-                Console.WriteLine();
-                Console.WriteLine("Notes:");
-                Console.WriteLine();
-                Console.WriteLine("  - The DDC VCP60 value defines which display input source is active.");
-                Console.WriteLine("  - If your display does not support DDC/CI, this tool will not work.");
-                Console.WriteLine("  - If unsure, just check your display's user guide for more details.");
-                Console.WriteLine();
-                Console.WriteLine("Have a look at https://github.com/mbodm/cdis for more information");
+                ShowUsage(true);
             }
             else
             {
@@ -44,7 +32,7 @@ namespace ControlDisplayInputSource
             Environment.Exit(0);
         }
 
-        public static void ExitWithError(int exitCode, string errorMessage)
+        public static void ExitWithError(int exitCode, string errorMessage, bool isArgumentError = false)
         {
             if (exitCode < 1 || exitCode > 254)
             {
@@ -58,6 +46,12 @@ namespace ControlDisplayInputSource
 
             Console.WriteLine();
             Console.WriteLine($"Error: {errorMessage}");
+
+            if (isArgumentError)
+            {
+                Console.WriteLine();
+                ShowUsage(false);
+            }
 
             Environment.Exit(exitCode);
         }
@@ -112,6 +106,27 @@ namespace ControlDisplayInputSource
                 GetEntryAssembly()?.
                 GetName()?.
                 Name ?? "UNKNOWN";
+        }
+
+        private static void ShowUsage(bool showNotesAndLink)
+        {
+            Console.WriteLine("Usage:");
+            Console.WriteLine();
+            Console.WriteLine($"  {ExeName} --get        Get the display's acutal DDC VCP60 value (as a number between 1 and 65535)");
+            Console.WriteLine($"  {ExeName} --set X      Set the display's acutal DDC VCP60 value (X: a number between 1 and 65535)");
+            Console.WriteLine($"  {ExeName} --cap        Get the display's supported VCP60 values (via the DDC capabilities string)");
+
+            if (showNotesAndLink)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Notes:");
+                Console.WriteLine();
+                Console.WriteLine("  - The DDC VCP60 value defines which display input source is active.");
+                Console.WriteLine("  - If your display does not support DDC/CI, this tool will not work.");
+                Console.WriteLine("  - If unsure, just check your display's user guide for more details.");
+                Console.WriteLine();
+                Console.WriteLine("Have a look at https://github.com/mbodm/cdis for more information");
+            }
         }
     }
 }

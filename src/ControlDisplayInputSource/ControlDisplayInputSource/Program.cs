@@ -19,7 +19,12 @@ internal class Program
 
         if (isGet && args.Length > 1 || isSet && args.Length > 2 || isCap && args.Length > 1)
         {
-            Helper.ExitWithError(1, "Too many arguments.");
+            Helper.ExitWithError(1, "Too many arguments.", true);
+        }
+
+        if (isSet && args.Length < 2)
+        {
+            Helper.ExitWithError(2, "Not enough arguments.", true);
         }
 
         try
@@ -38,7 +43,7 @@ internal class Program
             {
                 if (!uint.TryParse(args[1], out uint value) || value < 1 || value > 65535)
                 {
-                    Helper.ExitWithError(3, "Given argument is not a number between 1 and 65535.");
+                    Helper.ExitWithError(4, "Given argument is not a number between 1 and 65535.", true);
                 }
 
                 Console.WriteLine();
@@ -54,7 +59,7 @@ internal class Program
                 var vcp60Numbers = Helper.GetVCP60ValuesAsNumbersFromCapabilitiesString(capString);
                 if (string.IsNullOrEmpty(vcp60Numbers))
                 {
-                    Helper.ExitWithError(4, "Could not parse the VCP60 numbers from DDC capabilities string.");
+                    Helper.ExitWithError(5, "Could not parse the VCP60 numbers from DDC capabilities string.");
                 }
 
                 Console.WriteLine();
@@ -63,7 +68,7 @@ internal class Program
             }
             else
             {
-                Helper.ExitWithError(2, "Unknown argument.");
+                Helper.ExitWithError(3, "Unknown argument.", true);
             }
         }
         catch (InvalidOperationException e)
