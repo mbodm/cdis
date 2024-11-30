@@ -74,7 +74,7 @@ Check out the other DDC/CI tools out there, like in example NirSoft's fantastic 
 
 ### Windows blocks access?
 
-Typically, when you just start some ".exe" file, which has no certificate and is downloaded from somewhere (like in example from GitHub, in a ".zip" file 😄), Windows will block the access (by showing the blue SmartScreen popup), until you say it's ok. To do this, just right-click the ".exe" file in Explorer, select "Properties", check the "Unblock" checkbox and click the OK button. Now you can start your downloaded ".exe" file. This is nothing special to `cdis.exe` and it's always happening in Windows, for any ".exe" not having a certificate (not many have one). I just thought, it`s worth to mention this here, for the less experienced IT-peoples.
+Typically, when you just start some ".exe" file, which has no certificate and is downloaded from somewhere (like in example from GitHub, in a ".zip" file 😄), Windows will block the access (by showing the blue SmartScreen popup), until you allow the ".exe" (telling Windows "_it's ok_"). To do this, just right-click the ".exe" file in Explorer, select "Properties", check the "Unblock" checkbox and click the OK button. Now you can start your downloaded ".exe" file. This is nothing special to `cdis.exe` and it's always happening in Windows, for any ".exe" not having a certificate (not many have one). I just thought, it`s worth to mention this here, for the less experienced IT-peoples.
 
 You can read about it [here](https://www.windowscentral.com/how-fix-app-has-been-blocked-your-protection-windows-10), or you can watch the first part of [this](https://www.youtube.com/watch?v=0YYWaQSbiVA) video.
 
