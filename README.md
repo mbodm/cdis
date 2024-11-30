@@ -72,4 +72,8 @@ Therefore:
 
 Check out the other DDC/CI tools out there, like in example NirSoft's fantastic  [ControlMyMonitor](https://www.nirsoft.net/utils/control_my_monitor.html), if you are looking for multi-monitor support. Also [ddcutil](https://www.ddcutil.com/windows_programs/) has a nice list. Sorry `cdis.exe` can't help you here.
 
+### Build the source?
+
+If you wanna build the app on your own, just download the source and execute the `release.bat` script. Feel free to enhance the source, adapt it into your own projects, or whatever. It's under MIT license. So you can do with it, whatever you want. 😜
+
 **Have fun.**
