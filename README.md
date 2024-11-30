@@ -34,7 +34,11 @@ As a result, this tool was born.
 
 ### How to use?
 
-The tool itself should be rather self-explanatory. Just use the `--cap` argument to see which VCP60 values your display supports. Each VCP60 value represents one physical input source of your display. Either you just test each VCP60 value (by using the `--set` argument), or you take a look into your display's user manual, to find out which VCP60 value corresponds to which physical input source. By using the `--get` argument you can see which VCP60 value (and therefore the corresponding input source) is currently active.
+The tool itself should be rather self-explanatory.
+
+- Just use the `--cap` argument to see which VCP60 values your display supports. Each VCP60 value represents one physical input source of your display. Either you just test each VCP60 value (by using the `--set` argument), or you take a look into your display's user manual, to find out which VCP60 value corresponds to which physical input source.
+- By using the `--get` argument you can see which VCP60 value (and therefore the corresponding input source) is currently active.
+- By using the `--set` argument you can set the VCP60 value (and therefore the corresponding input source).
 
 ### Nice, anything else?
 
