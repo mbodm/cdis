@@ -56,7 +56,7 @@ This is, how i solved it:
 - Add the text file name ("Keyboard.ahk" in this case) as parameter to the "AutoHotkey64.exe" call
 - This tells AutoHotkey -> "_When you start read all the commands in that file_"
 - Now move the Windows Desktop Shortcut into the startup folder
-  - Just press "WIN+R" and type in "shell:startup"
+  - Just press "WIN+R" and type in "shell:startup" and press "ENTER"
   - This opens the startup folder
   - Hint -> Startup folder is user-related
   - Therefore make sure you are currently logged in as the specific user you want to add this for
