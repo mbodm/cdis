@@ -74,7 +74,7 @@ Check out the other DDC/CI tools out there, like in example NirSoft's fantastic 
 
 ### Windows shows blue popup?
 
-Typically, when you just start some ".exe" file, which has no certificate and is downloaded from somewhere (like in example from GitHub, in a ".zip" file 😄), Windows will block the access (by showing the blue SmartScreen popup), until you allow the ".exe" (telling Windows "_it's ok_").
+Typically, when you just start some ".exe" file, which has no certificate and is downloaded from somewhere (like in example from GitHub, in a ".zip" file 😄), Windows will block the execution (by showing the blue SmartScreen popup), until you allow the ".exe" (telling Windows "_it's ok_").
 
 To do this, just right-click the ".exe" file in Explorer, select "Properties", check the "Unblock" checkbox and click the OK button. Now you can start your downloaded ".exe" file.
 
