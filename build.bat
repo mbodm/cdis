@@ -7,7 +7,7 @@ set RELEASE_FOLDER=%CURRENT_FOLDER%\release
 
 cls
 echo.
-echo cdis.exe release script 1.0.1 (by MBODM 11/2024)
+echo cdis.exe build script 1.0.1 (by MBODM 11/2024)
 echo.
 
 cd %PROJECT_FOLDER%
