@@ -33,12 +33,12 @@ All 3 commands here do something rather simple:
 - Register a keyboard hotkey (see AutoHotkey docs for more information)
 - In example "^!Right" means "CTRL+ALT+RIGHTARROW"
 - Register a "Run" command for each keyboard hotkey
-- The Run command here says "_Start cdis.exe with appropriate input source VCP60 value_"
+- The Run command here says "_Start `cdis.exe` with appropriate input source VCP60 value_"
 
-This way you register 3 keyboard hotkeys when you login. And whenever you press that keyboard hotkey cdis starts and activate the appropriate input source of your display.
+This way you register 3 keyboard hotkeys when you login. And whenever you press that keyboard hotkey `cdis.exe` starts and activate the appropriate input source of your display.
 
 You can edit the text file and adjust it accordingly, to
-- set the correct path where your "cdis.exe" is located
+- set the correct path where your `cdis.exe` is located
 - set the correct VCP60 values for your display
 - set the keyboard keys you wish to use
 
