@@ -64,7 +64,7 @@ Sorry, full multi-monitor support is somewhat "spicy". To do it the right way (c
 
 Therefore:
 - `cdis.exe` doesn't offer multi-monitor control
-- `cdis.exe` will always use the primary monitor
+- `cdis.exe` will always use the primary monitor (of the active Desktop)
 
 Check out all the others DDC/CI tools out there, like in example NirSoft's fantastic  [MonitorControl](https://www.nirsoft.net/utils/control_my_monitor.html), if you are looking for better multi-monitor support. Also [ddcutil](https://www.ddcutil.com/windows_programs/) has a nice list. Sorry `cdis.exe` can't help you here.
 
