@@ -72,6 +72,12 @@ Therefore:
 
 Check out the other DDC/CI tools out there, like in example NirSoft's fantastic  [ControlMyMonitor](https://www.nirsoft.net/utils/control_my_monitor.html), if you are looking for multi-monitor support. Also [ddcutil](https://www.ddcutil.com/windows_programs/) has a nice list. Sorry `cdis.exe` can't help you here.
 
+### Windows blocks access?
+
+Typically, when you just start some ".exe" file, which has no certificate and is downloaded from somewhere (like in example from GitHub in a ".zip" file 😄), Windows will block the access, until you say it's ok. To do this, just right-click the ".exe" file in Explorer and select "Properties". Then check the "Unblock" checkbox and click "Ok". Now you can start your downloaded ".exe" file. This is nothing special to `cdis.exe` and it's always happening in Windows, for any ".exe" not having a certificate (not many have one). I just thought, it`s worth to mention here, for the less experienced IT-peoples.
+
+You can hear more about that, by watching some video like [this](https://www.youtube.com/watch?v=0YYWaQSbiVA).
+
 ### Build the source?
 
 If you wanna build the app on your own, just download the source and execute the `release.bat` script. Feel free to enhance the source, adapt it into your own projects, or whatever. It's under MIT license. So you can do with it, whatever you want. 😜
